@@ -3,6 +3,17 @@
 # Introdução ao projeto
 Projeto para aplicativo de condomínio
 
+# Integrantes
+-Larissa Moura Basso
+-Felipe de Souza Modesto
+-Gabriel Lima Silva
+-Daniel Cardoso Costa
+-Éder Cardoso Fernandes 
+-Davi de Oliveira
+
+## Protótipo Figma
+https://www.figma.com/file/FfpZ2n1bgwumlAev4L9mnj/CondoApp?type=design&node-id=0-1&mode=design&t=8p1uT439DdX8Y6px-0
+
 ## *_Tecnologias Utilizadas_*
 
 BACKEND
