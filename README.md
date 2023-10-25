@@ -5,7 +5,7 @@ Projeto para aplicativo de condomínio
 
 ## *_Tecnologias Utilizadas_*
 
-###BACKEND
+BACKEND
  - .Net6.0 (Utilizado como framework base)
  - EntityFramework 7.0 (Utilizado para acesso a banco de dados full ORM)
  - Microsoft SQL Server Management Studio 18.12.1
