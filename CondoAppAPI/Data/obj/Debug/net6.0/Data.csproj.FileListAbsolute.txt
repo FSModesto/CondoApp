@@ -1,0 +1,17 @@
+C:\Labs\Projects\CondoAppAPI\Data\bin\Debug\net6.0\Data.deps.json
+C:\Labs\Projects\CondoAppAPI\Data\bin\Debug\net6.0\Data.runtimeconfig.json
+C:\Labs\Projects\CondoAppAPI\Data\bin\Debug\net6.0\Data.dll
+C:\Labs\Projects\CondoAppAPI\Data\bin\Debug\net6.0\Data.pdb
+C:\Labs\Projects\CondoAppAPI\Data\bin\Debug\net6.0\Domain.dll
+C:\Labs\Projects\CondoAppAPI\Data\bin\Debug\net6.0\Domain.pdb
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\Data.csproj.AssemblyReference.cache
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\Data.AssemblyInfoInputs.cache
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\Data.AssemblyInfo.cs
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\Data.csproj.CoreCompileInputs.cache
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\Data.csproj.CopyComplete
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\Data.dll
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\refint\Data.dll
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\Data.pdb
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
+C:\Labs\Projects\CondoAppAPI\Data\obj\Debug\net6.0\ref\Data.dll
