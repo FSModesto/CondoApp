@@ -3,7 +3,7 @@
 # Introdução ao projeto
 Projeto para aplicativo de condomínio
 
-# Integrantes:
+# Integrantes
 
 -Larissa Moura Basso
 
