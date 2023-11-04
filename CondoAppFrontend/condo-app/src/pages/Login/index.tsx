@@ -1,24 +1,41 @@
 import axios from "axios";
 import React from "react";
 import { FC, useState } from "react";
+import { ContainerLogin, EmaileSenha, LoginBotao, Titulo, EsqueciSenha} from "./styles";
+
 
 const Login:FC = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState(false);
+    const [validacao, setValidacao] = useState({
+        email: true,
+        password: true,
+    });
 
     const send = async ()  => {
+        setError(false);
 
         if (email === ('') && password === ('')) {
-            alert('Email and password is required');
+            setValidacao({
+                email: false,
+                password: false
+            })
             return;
         }
 
         if (email === ('')) {
-            alert('Email is required');
+            setValidacao({
+                ...validacao,
+                email: false,
+            })
             return;
         }
         if (password === ('')) {
-            alert('Password is required');
+            setValidacao({
+                ...validacao,
+                password: false,
+            })
             return;
         }
         
@@ -28,22 +45,23 @@ const Login:FC = () => {
 
         axios.post('http://localhost:5133/User/logins', request)
         .then((response) => {
-            localStorage.setItem("mykey",JSON.stringify(response.data));
-            setEmail('');
-            setPassword('');
-        }).catch((error) => {
-            console.log(error);
-        })        
+            localStorage.setItem("Authorization",JSON.stringify(response.data));
+        }).catch((error) => { 
+            setError(true);
+        })     
     }
 
     return (
-        <div>
-            <input value={email} onChange={e => setEmail(e.target.value)} type="text" />
-            <br />
-            <input value={password} onChange={e => setPassword(e.target.value)} type="password" />
-            <br />
-            <button onClick={send}>Login</button>
-        </div>
+        <ContainerLogin variavel={error}>
+            <Titulo>CondoApp</Titulo>
+            <EmaileSenha validacampos={validacao.email} value={email} onChange={e => setEmail(e.target.value)} type="email" placeholder="Email@example.com" />
+            {!validacao.email && <p style={{color: 'red'}}>Preencha o campo email</p>}
+            <EmaileSenha validacampos={validacao.password} value={password} onChange={e => setPassword(e.target.value)} type="password" placeholder="Digite sua senha"/>
+            {!validacao.password && <p style={{color: 'red'}}>Preencha o campo senha</p>}
+            <EsqueciSenha>Esqueci minha senha</EsqueciSenha>
+            <LoginBotao onClick={send}>Login</LoginBotao>
+            {error && <p style={{color: 'red'}}>Usuario ou senha inválidos</p>}
+        </ContainerLogin>
     ) 
 };
 
