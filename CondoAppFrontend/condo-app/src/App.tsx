@@ -20,6 +20,7 @@ function App() {
           <p>Tela não encontrada</p>
         </Route>
       </Switch>
+      
   );
 }
 
