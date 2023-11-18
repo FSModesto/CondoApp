@@ -1,7 +1,9 @@
 import axios from "axios";
-import React from "react";
+import React, { useEffect } from "react";
 import { FC, useState } from "react";
 import { ContainerLogin, EmaileSenha, LoginBotao, Titulo, EsqueciSenha} from "./styles";
+import { useHistory } from "react-router-dom";
+import { IToken } from "../../interfaces/localstorage.interfaces";
 
 
 const Login:FC = () => {
@@ -12,6 +14,7 @@ const Login:FC = () => {
         email: true,
         password: true,
     });
+    const router = useHistory();
 
     const send = async ()  => {
         setError(false);
@@ -44,12 +47,19 @@ const Login:FC = () => {
         }
 
         axios.post('http://localhost:5133/User/logins', request)
-        .then((response) => {
+        .then((response: {data: IToken}) => {
             localStorage.setItem("Authorization",JSON.stringify(response.data));
+            router.push('/');
         }).catch((error) => { 
             setError(true);
         })     
     }
+
+    useEffect(() => {
+        if (localStorage.getItem('Authorization')) {
+            router.push('/');
+        }
+    }, [])
 
     return (
         <ContainerLogin variavel={error}>
