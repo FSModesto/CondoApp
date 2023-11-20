@@ -30,6 +30,7 @@ FRONTEND
 - Baixar pasta CondoAppFrontend/condo-app
 - Abrir VSCode (ter instalado)
 - Abrir terminal no diretório do projeto "CondoAppFrontend/condo-app"
+- - Executar o comando "npm install"
 - Executar o comando "npm start"
 
 ### Fluxo do Projeto (Navegação entre telas)
