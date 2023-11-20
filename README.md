@@ -22,6 +22,21 @@ https://www.figma.com/file/FfpZ2n1bgwumlAev4L9mnj/CondoApp?type=design&node-id=0
 
 ## *_Tecnologias Utilizadas_*
 
+FRONTEND
+ - React (Utilizado como framework base)
+
+## Fluxo de Funcionamento Frontend
+- Instalar o Node.js v6.14.13
+- Baixar pasta CondoAppFrontend/condo-app
+- Abrir VSCode (ter instalado)
+- Abrir terminal no diretório do projeto "CondoAppFrontend/condo-app"
+- Executar o comando "npm start"
+
+### Fluxo do Projeto (Navegação entre telas)
+- Fazer login com os dados   "email": "pi@exemplo.com.br", "password": "projetointegrador".
+- Na tela inicial, clicar em reservar.
+- Inserir dados e "adicionar".
+
 BACKEND
  - .Net6.0 (Utilizado como framework base)
  - EntityFramework 7.0 (Utilizado para acesso a banco de dados full ORM)
