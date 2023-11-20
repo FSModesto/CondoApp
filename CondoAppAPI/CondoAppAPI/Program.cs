@@ -29,6 +29,17 @@ builder.Services.AddAuthentication(x =>
     };
 });
 
+builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAnyOrigin",
+                builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+        });
+
 builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
@@ -43,6 +54,8 @@ builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
 builder.Services.AddDbContext<CondoAppContext>();
 
 var app = builder.Build();
+
+app.UseCors("AllowAnyOrigin");
 
 app.UseSwagger();
 app.UseSwaggerUI();
