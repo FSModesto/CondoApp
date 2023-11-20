@@ -7,7 +7,6 @@ using System.Net;
 
 namespace CondoAppAPI.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class ReservationController : ControllerBase
